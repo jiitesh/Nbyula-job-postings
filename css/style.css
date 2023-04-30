@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;}
+html body{
+    padding: 0px;
+    margin: 0px;
+    background-color:white;
+    font-family:Georgia, 'Times New Roman', Times, serifl;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Candal',serif;
+    color:rgb(55, 55, 55)
+}
+header{
+    background-color:black;
+    height: 66px;
+    box-shadow: 0px 0px 10px black;
+}
+header *{
+    color:white;
+}
+header .logo{
+    float: left;
+    height:inherit;
+    margin-left: 1.1em;
+}
+header .logo-text{
+    margin: 9px;
+    font-family:'Square Peg','Roboto Slab','Rubik','Open Sans';
+}
+header .logo-text span{
+    color:blueviolet;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 888383888;
+}
+header ul li:hover ul{
+    display:block;
+}
+header ul li ul li{
+    box-shadow: 0px 0px 10px black;
+    background-color:white;
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    color: black;
+}
+header ul li ul li a:hover{
+    background-color: black;
+    color: white;
+}
+header ul li ul li a.Logout{
+    color: red;
+}
+header ul li ul li a.Logout:hover{
+    color:brown;
+}
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+header ul li a:hover{
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+header .menu-toggle{
+    display: none;
+}
+
+.post-slider{
+    position: relative;
+    min-height: 100%;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.post-slider .prev:hover,.next:hover{
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
+    padding: 12px;
+}
+.post-slider .post-wrapper{
+    position: relative;
+    width: 80%;
+    height:auto;
+    left: 0%;
+    right: 0%;
+    margin: 0px auto;
+    padding: 1px 2px 1px 0px;
+    display: flex;
+    align-items: center;
+    align-content:stretch ;
+    overflow-y:visible;
+    overflow: inherit;
+}
+
+.post-slider .post-wrapper .post{
+    position: relative;
+    left:0px;
+    background:linear-gradient( 135deg, red, rgb(123, 11, 11));
+    display: inline-block;
+    width: 300px;
+    height: 330px;
+    margin:12px;
+    margin-left: 18px;
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 1rem 1rem 1rem -1rem black;
+}
+.post-slider .post-wrapper .post .post-contents{
+    position: absolute;
+    width: 100%;
+    right: 0em;
+    top: 0px;
+    margin: 0px;
+    padding: 7px;
+}
+
+.post-slider .post-wrapper .post .post-contents button{
+    float: inline-end;
+}
+.post-slider .post-wrapper .post .post-contents button:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Footer*/
+.footer{
+    background-color: slategray;
+    color: azure;
+    height: 400px;
+}
+.footer .footer-content{
+    display: flex;
+    height: 350px;
+}
+.footer .footer-content .footer-section{
+    flex:1;
+    padding: 25px;
+    border: solid white;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 850px){
+    header {
+        position: relative;
+    }
+    header ul{
+        width: 100%;
+        background-color:rgb(26, 26, 26);
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .showing{
+        max-height: 100em;
+    }
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+     }
+    header ul li ul li a{
+        background-color:rgb(26, 26, 26);
+        color: white;
+        padding: 10px;
+        padding-left:50px;
+    }
+    header .menu-toggle{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right:20px;
+        font-size: 1.5em;
+        float: right;
+        cursor: pointer;
+    }
+    .post-slider .slider-title{
+        left:50%;
+    }
+
+    .post-slider .post-wrapper{
+        position: relative;
+        left: 10%;
+        align-self: left;
+        right: 10%;
+        display:inline-block;
+    }
+    .post-slider .post-wrapper .post{
+        position:relative;
+        width: 270px;
+        align-self: center;
+        margin-left:10%;
+        margin-right: 1%;
+        left: 0px;
+        padding-left: 32px;
+    }
+    .post-slider .post-wrapper .post-wrapper-container{
+        position: inherit;
+        margin: 0px;
+        padding-left: 15%;
+        padding-top: 0px;
+    }
+}

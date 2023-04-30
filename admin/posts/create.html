@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+<!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/77bf637a61.js" crossorigin="anonymous"></script>
+
+
+    <!--Google Fonsts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@600&family=Rubik&family=Square+Peg&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+
+
+    <!--CSS styling-->
+    <link rel="stylesheet" href="../../css/style.css">
+
+     <!--CSS styling-->
+     <link rel="stylesheet" href="../../css/admin.css">
+
+    <title>Admin Section | Add posts</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Nb<span>y</span>ula</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle" style="cursor: pointer;"></i>
+        <ul class="nav">
+            <li>
+                <a href="#" class="dash-drop">
+                    <i class="fa fa-user"></i>
+                    Jimmy 
+                    <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
+                </a>
+                <ul>
+                    <li><a href="#" class="Logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!--Admin Page wrapper begin-->
+    <div class="admin-wrapper">
+       
+        <!--Left Sidebar-->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="index.html">Manage Jobs</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="../topics/index.html">Manage Topics</a></li>
+            </ul>
+        </div>
+        <!--End Left Sidebar-->
+
+
+        <!--Main Content-->
+        <div class="main-content">
+            <div class="button-grp">
+                <a href="create.html" class="btn btn-big">Add Post</a>
+                <a href="index.html" class="btn btn-big">Manage Post</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Manage Jobs</h2>
+    
+
+                <form action="create.html" method="post">
+                    <div>
+                        <div>
+                            <label>Title</label>
+                            <input type="text" name="title" class="text-input" style="height: 35 px;">
+                        </div>
+
+                        <div>
+                            <label >Description</label>
+                            <textarea name="description" class="text-input" cols="30" rows="10"></textarea>                    
+                        </div>
+    
+                        <div>
+                            <label>Job Nature</label>
+                            <select name="nature">
+                                <option value="technical">Technical</option>
+                                <option value="non-technical">Non-Technical</option>
+                            </select>
+                        </div> 
+
+                        <button type="submit" class="btn btn-big">Add Job</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <!--Main content End-->
+
+    </div>
+    <!--AdminPage wrapper end-->
+
+    
+    
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!--CKeditor for markup-->
+   <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script>
+    <!-- Custom Script-->
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>
