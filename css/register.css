@@ -232,6 +232,12 @@ min-width:100%;}
   border-bottom: 2px solid rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
+.form-content .input-box select{
+  width: 50%;
+  background-color:#fff;
+  color: #290c50;
+  font-size: 1.1rem;
+}
 .form-content .input-box input:focus,
 .form-content .input-box input:valid{
   border-color: #7d2ae8;
